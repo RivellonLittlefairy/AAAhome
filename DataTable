@@ -1,0 +1,14 @@
+表名：game_info_steam
+主键：id int 不可空 无默认值 自增
+game_name varchar(200) 不可空 无默认值
+（游戏名字）
+price_now int 不可空 无默认值
+（当天价格）
+price_lowest int 不可空 无默认值
+（最低的价格）
+coverimage_url varchar(190,000) 不可空 无默认值revise
+detail_page varchar(190,000) 不可空 无默认值
+relase_date varchar(500) 不可空，无默认值timestamp
+（发行日期）
+nearly_lowest_timestamp int 不可空 无默认值
+(这个时间戳最近一次出现最低价格的日期）
