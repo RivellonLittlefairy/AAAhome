@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<db_config>
+    <environments>
+        <environment where="steam">
+            <host>127.0.0.1</host>
+            <port>3306</port>
+            <user>root</user>
+            <password></password>
+            <database>game_price_info</database>
+            <charset>utf8</charset>
+        </environment>
+        <environment where="epic">
+        </environment>
+    </environments>
+</db_config>
