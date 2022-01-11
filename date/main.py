@@ -1,3 +1,5 @@
+import sys
+
 import pymysql
 import xml.dom.minidom
 from bs4 import BeautifulSoup
@@ -5,13 +7,14 @@ import requests
 import time
 import datetime
 
+
 def writeToDatabase(db, name, coverImage, price, releaseDate, detailsPage):
     print(name)
-    cursor = db.cursor()
     # 去除商标符号（无法保存）
     name = name.replace('®', '')
     # 处理单引号保存
     name = name.replace('\'', '\'\'')
+    cursor = db.cursor()
     sql = 'select price_now from exam01 where game_name=\'' + name + '\''
     cursor.execute(sql)
     prices = cursor.fetchall()
@@ -58,6 +61,7 @@ def writeToDatabase(db, name, coverImage, price, releaseDate, detailsPage):
                 cursor.execute(sql)
                 db.commit()
 
+
 # 读取数据库连接配置文档，获取数据库连接
 def getDBConnection():
     dom = xml.dom.minidom.parse('db_conf.xml')
@@ -73,9 +77,11 @@ def getDBConnection():
             charset = environment.getElementsByTagName("charset")[0].childNodes[0].nodeValue
     return pymysql.connect(host=host, user=user, password="", database=database, charset=charset, port=int(port))
 
-def savaDataOnByOn(start):
+
+def savaDataOnByOn(db, start):
     r = requests.get(
-        'https://store.steampowered.com/search/results/?query&start=' + start + '&count=50&dynamic_data=&sort_by=_ASC&snr=1_7_7_gl',timeout=100)
+        'https://store.steampowered.com/search/results/?query&start=' + start + '&count=50&dynamic_data=&sort_by=_ASC&snr=1_7_7_gl',
+        timeout=15)
     soup = BeautifulSoup(r.text, 'lxml')
     # search_result_row ds_collapse_flag
     lis = soup.find_all(class_='search_result_row ds_collapse_flag')
@@ -89,9 +95,41 @@ def savaDataOnByOn(start):
         price = soup.find(class_='col search_price_discount_combined responsive_secondrow')['data-price-final']
         name = soup.find(class_='title').string
         coverImage = soup.find('img')['src']
-        db = getDBConnection()
         writeToDatabase(db, name, coverImage, price, releaseDate, detailsPage)
-        db.close()
 
-for rank in range(300):
-    savaDataOnByOn(str(rank * 50))
+
+# 获取当前日期
+now = datetime.datetime.now()
+date = now.strftime("%Y-%m-%d")
+
+# 获取数据库连接
+db = getDBConnection()
+cursor = db.cursor()
+
+# 查询今日爬取到了第几页
+sql = 'select mark from control where date=\'' + date + '\''
+cursor.execute(sql)
+result = cursor.fetchall()
+mark = 0
+# 如果还没有获取数据，就插入一条值为0的信息
+if len(result) == 0:
+    sql1 = 'insert into control (date,mark) values ('
+    sql2 = '\'' + date + '\'' + ',0)'
+    cursor.execute(sql1 + sql2)
+    db.commit()
+# 如果已经有今天的记录，将mark值更新为上次查询结束的最后一页
+else:
+    mark = list(result[0])[0]
+# 如果更新了500页，说明更新了两万五千条数据了，今日任务完成，退出
+if mark != 500:
+    # 开始爬取
+    while mark <= 500:
+        # 查询第mark页的数据
+        savaDataOnByOn(db, str(mark * 50))
+        mark += 1
+        # 更新数据库中control数据
+        sql = 'update control set mark=\'' + str(mark) + '\' where date=\'' + date + '\''
+        cursor.execute(sql)
+        db.commit()
+# 只有在这里关闭连接
+db.close()
