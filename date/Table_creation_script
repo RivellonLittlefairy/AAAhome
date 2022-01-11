@@ -1,3 +1,4 @@
+#这一张表用来记录爬取的游戏信息
 create table game_info_steam(
 id int not null primary key auto_increment,
 game_name varchar(200) not null,
@@ -10,4 +11,8 @@ nearly_lowest_timestamp int not null,
 mark1 varchar(200) not null default('0'),
 mark2 text not null default('empty')
 )engine=innodb default charset=utf8;
-
+#这一张表用来控制脚本每次从哪个页面开始爬取，date是日期，control是这一天爬取到了哪一页
+create table control(
+date varchar(50) not null primary key,
+mark int not null
+)engine=innodb default charset=utf8;
