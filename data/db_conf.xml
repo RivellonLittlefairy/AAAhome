@@ -5,7 +5,7 @@
             <host>127.0.0.1</host>
             <port>3306</port>
             <user>root</user>
-            <password></password>
+            <password>fs4txdya</password>
             <database>game_price_info</database>
             <charset>utf8</charset>
         </environment>
