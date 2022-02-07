@@ -50,8 +50,8 @@ def saveData(id, text):
     if price == "免费开玩":
         price = 0
     else:
-        price = price.replace("¥ ", "")
-        price = price.replace("$ ", "")
+        price = price.replace("¥", "")
+        price = price.replace("$", "")
         price = int(float(price)) * 100
     price = str(price)
     # isDlc
@@ -70,7 +70,7 @@ def saveData(id, text):
     for child in find:
         dlcs += "," + child.string.strip()
     # 封面
-    HDCoverImg = soup.find(class_='game_header_image_full').string.strip()
+    HDCoverImg = soup.find(class_='game_header_image_full')['src']
     # 标签
     tag = ""
     find = soup.find_all(class_='app_tag')
