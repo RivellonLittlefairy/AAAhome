@@ -75,7 +75,7 @@ def getDBConnection():
             password = environment.getElementsByTagName("password")[0].childNodes[0].nodeValue
             database = environment.getElementsByTagName("database")[0].childNodes[0].nodeValue
             charset = environment.getElementsByTagName("charset")[0].childNodes[0].nodeValue
-    return pymysql.connect(host=host, user=user, password=password, database=database, charset=charset, port=int(port))
+    return pymysql.connect(host=host, user=user, password="", database=database, charset=charset, port=int(port))
 
 
 def savaDataOnByOn(db, start):
