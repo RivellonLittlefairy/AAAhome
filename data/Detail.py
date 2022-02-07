@@ -2,10 +2,6 @@ import pymysql
 import xml.dom.minidom
 from bs4 import BeautifulSoup
 import requests
-import re
-
-# 战神，也就是进不去的页面url
-# https://store.steampowered.com/agecheck/app/1593500/
 from getDB import getDBConnection
 
 
@@ -42,9 +38,15 @@ def saveData(id, text):
         return
     success = 1
     # 游戏名字
-    name = soup.find(class_='apphub_AppName').string.strip()
+    name = soup.find(class_='apphub_AppName')
+    if name is None:
+        return
+    name = name.string.strip()
     # 游戏简介
-    comments = soup.find_all(class_='game_description_snippet')[0].string.strip()
+    comments = soup.find_all(class_='game_description_snippet')[0]
+    if comments is None:
+        return
+    comments = comments.string.strip()
     # 原价
     price = soup.find(class_='game_purchase_price price').string.strip()
     if not price.isdigit():
