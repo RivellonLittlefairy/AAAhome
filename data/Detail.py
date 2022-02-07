@@ -37,7 +37,7 @@ def saveData(id, text):
     cursor = db.cursor()
     soup = BeautifulSoup(text, 'lxml')
     # 能不能打开
-    success = soup.find_all(class_='agegate_birthday_desc')
+    success = soup.find_all(class_='agegate_birthday_selector')
     if len(success) == 1:
         return
     success = 1
@@ -47,7 +47,7 @@ def saveData(id, text):
     comments = soup.find_all(class_='game_description_snippet')[0].string.strip()
     # 原价
     price = soup.find(class_='game_purchase_price price').string.strip()
-    if price == "免费开玩":
+    if not price.isdigit():
         price = 0
     else:
         price = price.replace("¥", "")
