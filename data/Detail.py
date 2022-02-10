@@ -44,10 +44,10 @@ def saveData(id, text):
         return
     name = name.string.strip()
     # 游戏简介
-    comments = soup.find_all(class_='game_description_snippet')[0]
+    comments = soup.find_all(class_='game_description_snippet')
     if comments is None:
         return
-    comments = comments.string.strip()
+    comments = comments[0].string.strip()
     # 原价
     price = soup.find(class_='game_purchase_price price')
     if price is None:
