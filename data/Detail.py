@@ -3,11 +3,8 @@ import xml.dom.minidom
 from bs4 import BeautifulSoup
 import requests
 
-from getDB import getDBConnection
-
-
 def getData():
-    db = getDBConnection()
+    db = pymysql.connect(host="127.0.0.1", user="root", password="fs4txdya", database="game_price_info", charset="utf8", port=3306)
     cursor = db.cursor()
     cursor.execute("select count(*) from detail")
     count = cursor.fetchall()[0][0]
@@ -18,10 +15,8 @@ def getData():
     for index in range(1, count + 1):
         sql = "select url,success from detail where id=%s"
         cursor.execute(sql, index)
-
         mark = cursor.fetchall()
         url = mark[0][0]
-        print(url)
         r = requests.get(url, timeout=20, headers=headers)
         saveData(index, r.text)
 
@@ -102,7 +97,8 @@ def saveData(id, text):
     # 存入数据库
     sql = "update detail set gameName=%s,success=%s,highPrice=%s,isDlc=%s,appraise=%s,comments=%s,DlcNames=%s,HDCoverImg=%s,tag=%s,HDImg=%s,HDMovie=%s where id=%s"
     cursor.execute(sql, (name, success, price, isDlc, appraise, comments, dlcs, HDCoverImg, tag, HDImg, HDMovie, id))
-    print((name, success, price, isDlc, appraise, comments, dlcs, HDCoverImg, tag, HDImg, HDMovie, id))
+    print(id)
+    print(name)
     db.commit()
 
 getData()
