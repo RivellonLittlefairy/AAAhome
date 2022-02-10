@@ -11,6 +11,7 @@ DlcNames text not null default(''),
 HDCoverImg text not null default(''),
 tag text not null default(''),
 HDImg text not null default(''),
+HDMovie text not null default (''),
 mark1 varchar(200) not null default('0'),
 mark2 text not null default('empty')
 )engine=innodb default charset=utf8;

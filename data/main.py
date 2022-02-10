@@ -96,6 +96,20 @@ def savaDataOnByOn(db, start):
         name = soup.find(class_='title').string
         coverImage = soup.find('img')['src']
         writeToDatabase(db, name, coverImage, price, releaseDate, detailsPage)
+        # 存原价
+        HPrice = price
+        find = soup.find(class_='col search_price discounted responsive_secondrow')
+        if not find is None:
+            HPrice = find.span.strike.string.replace("¥ ", "")
+            HPrice = int(float(HPrice)) * 100
+        saveHPrice(db, name, HPrice)
+
+
+def saveHPrice(db, name, HPrice):
+    cursor = db.cursor()
+    sql = "update game_info_steam set mark1=%s where game_name=%s"
+    cursor.execute(sql, (HPrice, name))
+    db.commit()
 
 
 # 获取当前日期

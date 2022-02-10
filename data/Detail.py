@@ -2,6 +2,7 @@ import pymysql
 import xml.dom.minidom
 from bs4 import BeautifulSoup
 import requests
+
 from getDB import getDBConnection
 
 
@@ -78,17 +79,27 @@ def saveData(id, text):
     find = soup.find_all(class_='app_tag')
     for i in find:
         tag += "," + i.string.strip()
-    # 宣传图片,不清楚
+    # 宣传图片
     HDImg = ""
     find = soup.find_all(class_='highlight_strip_item highlight_strip_screenshot')
     for i in find:
-        HDImg += "," + i.contents[1]['src']
+        res = i.contents[1]['src']
+        res = res.replace("116x65", "1920x1080")
+        HDImg += "," + res
+    # 宣传视频
+    HDMovie = ""
+    find = soup.find_all(class_='movie_thumb')
+    for i in find:
+        res = i['src']
+        res = res.replace(".184x123.jpg", "480.webm")
+        HDMovie += "," + res
 
     # 存入数据库
-    sql = "update detail set gameName=%s,success=%s,highPrice=%s,isDlc=%s,appraise=%s,comments=%s,DlcNames=%s,HDCoverImg=%s,tag=%s,HDImg=%s where id=%s"
-    cursor.execute(sql, (name, success, price, isDlc, appraise, comments, dlcs, HDCoverImg, tag, HDImg, id))
-    print((name, success, price, isDlc, appraise, comments, dlcs, HDCoverImg, tag, HDImg, id))
+    sql = "update detail set gameName=%s,success=%s,highPrice=%s,isDlc=%s,appraise=%s,comments=%s,DlcNames=%s,HDCoverImg=%s,tag=%s,HDImg=%s,HDMovie=%s where id=%s"
+    cursor.execute(sql, (name, success, price, isDlc, appraise, comments, dlcs, HDCoverImg, tag, HDImg, HDMovie, id))
+    print((name, success, price, isDlc, appraise, comments, dlcs, HDCoverImg, tag, HDImg, HDMovie, id))
     db.commit()
 
 
+saveData(0, open('doc.txt'))
 getData()
