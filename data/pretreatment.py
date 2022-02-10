@@ -9,7 +9,7 @@ def pretreatment():
     count = int(count[0][0])
     cursor.execute("select count(*) from detail")
     begin = cursor.fetchall()
-    begin = int(count[0][0])
+    begin = int(begin[0][0])
     for index in range(begin+1, count):
         sql = "select detail_page from game_info_steam where id=" + str(index)
         cursor.execute(sql)
