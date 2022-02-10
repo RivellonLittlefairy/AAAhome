@@ -49,7 +49,10 @@ def saveData(id, text):
         return
     comments = comments.string.strip()
     # 原价
-    price = soup.find(class_='game_purchase_price price').string.strip()
+    price = soup.find(class_='game_purchase_price price')
+    if price is None:
+        price=0
+    price=price.string.strip()
     if not price.isdigit():
         price = 0
     else:
