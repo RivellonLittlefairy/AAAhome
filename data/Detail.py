@@ -20,9 +20,6 @@ def getData():
         cursor.execute(sql, index)
 
         mark = cursor.fetchall()
-        if mark[0][1] == 1:
-            print("success" + str(index))
-            continue
         url = mark[0][0]
         print(url)
         r = requests.get(url, timeout=20, headers=headers)
@@ -46,8 +43,12 @@ def saveData(id, text):
     # 游戏简介
     comments = soup.find_all(class_='game_description_snippet')
     if comments is None:
-        return
-    comments = comments[0].string.strip()
+        comments=""
+    if len(comments)!=0:
+        comments = comments[0].string.strip()
+    else:
+        comments=""
+
     # 原价
     price = soup.find(class_='game_purchase_price price')
     if price is None:
@@ -104,6 +105,4 @@ def saveData(id, text):
     print((name, success, price, isDlc, appraise, comments, dlcs, HDCoverImg, tag, HDImg, HDMovie, id))
     db.commit()
 
-
-saveData(0, open('doc.txt'))
 getData()
