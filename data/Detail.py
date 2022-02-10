@@ -22,7 +22,7 @@ def getData():
 
 
 def saveData(id, text):
-    db = getDBConnection()
+    db = pymysql.connect(host="127.0.0.1", user="root", password="fs4txdya", database="game_price_info", charset="utf8", port=3306)
     cursor = db.cursor()
     soup = BeautifulSoup(text, 'lxml')
     # 能不能打开
