@@ -12,6 +12,7 @@ public class JedisTool {
     public static Jedis getJedis(){
         final Jedis jedis = jedisPool.getResource();
         jedis.auth("fs4txdya");
+        System.out.println("exam");
         return jedis;
     }
 }
