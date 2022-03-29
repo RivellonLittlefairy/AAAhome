@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.aaahome.mapper.GISMapper">
+    <select id="getById" resultType="GameInfoSteam">
+        SELECT *
+        FROM game_price_info.game_info_steam
+        WHERE id = #{id}
+    </select>
+
+    <select id="getAppraise" resultType="String">
+        SELECT appraise
+        FROM game_price_info.detail
+        WHERE id = #{id}
+    </select>
+
+    <select id="getImgSrc" resultType="String">
+        SELECT HDCoverImg
+        FROM game_price_info.detail
+        WHERE id = #{id}
+    </select>
+
+    <select id="getDetailById" resultType="DetailFromDB">
+        SELECT *
+        FROM game_price_info.detail
+        WHERE id = #{id}
+    </select>
+
+    <select id="getPriceById" resultType="int">
+        SELECT price_now
+        FROM game_price_info.game_info_steam
+        WHERE id = #{id}
+    </select>
+
+    <select id="getUserByEmail" resultType="User">
+        SELECT *
+        FROM game_price_info.user
+        WHERE email = #{email}
+    </select>
+
+    <select id="saveDetailPrice">
+        update game_price_info.detail
+        set highPrice = #{price},mark1=#{priceNow}
+        where id = #{id}
+    </select>
+
+    <select id="changeName">
+        update game_price_info.game_info_steam
+        set game_name = #{name}
+        where id = #{id}
+    </select>
+
+    <select id="addUser">
+        insert into game_price_info.user (uname, pwd, email, uhead)
+        values (#{uname}, #{pwd}, #{email}, #{uhead});
+    </select>
+
+    <select id="getByNamePrefix" resultType="GameInfoSteam">
+        SELECT *
+        FROM game_price_info.game_info_steam
+        WHERE game_name like concat(#{name}, '%')
+    </select>
+
+    <select id="getUserNumber" resultType="int">
+        SELECT count(*)
+        FROM game_price_info.user
+    </select>
+
+    <select id="getGameNumber" resultType="int">
+        SELECT count(*)
+        FROM game_price_info.game_info_steam
+    </select>
+
+    <select id="getUserEmail" resultType="String">
+        SELECT email
+        FROM game_price_info.user
+        WHERE uid = #{id}
+    </select>
+
+    <select id="getLikeName" resultType="java.lang.Integer">
+        SELECT id
+        FROM game_price_info.game_info_steam
+        WHERE game_name like concat(#{name}, '%') limit 10
+    </select>
+
+</mapper>

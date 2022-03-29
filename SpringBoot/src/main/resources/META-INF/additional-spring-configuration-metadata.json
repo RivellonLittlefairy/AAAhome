@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "max-lifetime",
+      "type": "java.lang.String",
+      "description": "Description for max-lifetime."
+  }
+] }
