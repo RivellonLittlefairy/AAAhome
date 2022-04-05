@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AAAhome</string>
+    <string name="title_discount">discount</string>
+    <string name="title_library">library</string>
+    <string name="title_wishlist">wishlist</string>
+    <string name="title_me">me</string>
+    <string name="basePort">124.223.63.146:8080</string>
+</resources>        

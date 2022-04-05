@@ -1,0 +1,17 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        //轮播图
+        maven { url 'https://www.jitpack.io' }
+        maven {
+            //可展开文本框
+            url 'https://s01.oss.sonatype.org/content/repositories/releases/'
+        }
+
+    }
+}
+rootProject.name = "AAAhome2"
+include ':app'

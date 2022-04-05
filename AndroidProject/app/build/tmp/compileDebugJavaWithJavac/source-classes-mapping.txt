@@ -1,0 +1,20 @@
+com/example/aaahome2/databinding/LibraryItemBinding.java
+ com.example.aaahome2.databinding.LibraryItemBinding
+com/example/aaahome2/BuildConfig.java
+ com.example.aaahome2.BuildConfig
+com/example/aaahome2/databinding/FragmentWishlistBinding.java
+ com.example.aaahome2.databinding.FragmentWishlistBinding
+com/example/aaahome2/databinding/FragmentDiscountBinding.java
+ com.example.aaahome2.databinding.FragmentDiscountBinding
+com/example/aaahome2/databinding/BannerItemBinding.java
+ com.example.aaahome2.databinding.BannerItemBinding
+com/example/aaahome2/databinding/FragmentLibraryBinding.java
+ com.example.aaahome2.databinding.FragmentLibraryBinding
+com/example/aaahome2/databinding/WishlistItemBinding.java
+ com.example.aaahome2.databinding.WishlistItemBinding
+com/example/aaahome2/databinding/ActivityDetailBinding.java
+ com.example.aaahome2.databinding.ActivityDetailBinding
+com/example/aaahome2/databinding/ActivityMainBinding.java
+ com.example.aaahome2.databinding.ActivityMainBinding
+com/example/aaahome2/databinding/FragmentMeBinding.java
+ com.example.aaahome2.databinding.FragmentMeBinding

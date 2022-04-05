@@ -1,0 +1,4 @@
+#Sun Mar 20 10:45:42 CST 2022
+base.0=C\:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
