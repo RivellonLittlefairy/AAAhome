@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AAAhome</string>
+    <string name="title_discount">游戏库</string>
+    <string name="title_library">折扣</string>
+    <string name="title_wishlist">愿望单</string>
+    <string name="title_me">我的</string>
+    <string name="basePort">124.223.63.146:8080</string>
+</resources>        

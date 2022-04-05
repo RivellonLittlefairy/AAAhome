@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_library.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\fragment_library.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_search_game.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\activity_search_game.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_wishlist.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\fragment_wishlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\banner_item.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\banner_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_me.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\fragment_me.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\wishlist_item.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\wishlist_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\search_item.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\search_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_steamweb.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\activity_steamweb.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_discount.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\fragment_discount.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\library_item.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\library_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_detail.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\activity_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\layout\\activity_login.xml"
+    }
+]

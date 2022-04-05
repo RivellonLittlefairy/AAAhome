@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.SearchGameActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/actionBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <EditText
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/search_cancel"
+            app:layout_constraintTop_toTopOf="parent"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:id="@+id/searchEdit"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="4.3"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:hint="搜索游戏"/>
+        <TextView
+            android:id="@+id/search_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/searchEdit"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="取消"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/actionBarLayout"
+        android:id="@+id/recyclerSearch"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
