@@ -6,78 +6,78 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml
+8-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml
+9-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:7:5-38:19
+13-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:7:5-38:19
 14        android:name="com.example.aaahome2.AAAhomeApplication"
-14-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:8:9-43
+14-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:8:9-43
 15        android:allowBackup="true"
-15-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:9:9-35
+15-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 16-->[androidx.core:core:1.7.0] C:\Users\msf\.gradle\caches\transforms-3\adacc4bbdca3c037c01e5031782c646c\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:extractNativeLibs="false"
 19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:10:9-43
+19-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:10:9-43
 20        android:label="@string/app_name"
-20-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:11:9-41
+20-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:11:9-41
 21        android:networkSecurityConfig="@xml/ip"
-21-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:12:9-48
+21-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:12:9-48
 22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:13:9-54
+22-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:13:9-54
 23        android:supportsRtl="true"
-23-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:14:9-35
+23-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:14:9-35
 24        android:testOnly="true"
 25        android:theme="@style/Theme.AAAhome2" >
-25-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:15:9-46
+25-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:15:9-46
 26        <activity
-26-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:16:9-18:40
+26-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:16:9-18:40
 27            android:name="com.example.aaahome2.ui.search.SearchGameActivity"
-27-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:17:13-57
+27-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:17:13-57
 28            android:exported="false" />
-28-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:18:13-37
+28-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:18:13-37
 29        <activity
-29-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:19:9-21:40
+29-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:19:9-21:40
 30            android:name="com.example.aaahome2.ui.detail.DetailActivity"
-30-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:20:13-53
+30-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:20:13-53
 31            android:exported="false" />
-31-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:21:13-37
+31-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:21:13-37
 32        <activity
-32-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:22:9-24:40
+32-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:22:9-24:40
 33            android:name="com.example.aaahome2.ui.web.SteamWeb"
-33-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:23:13-44
+33-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:23:13-44
 34            android:exported="false" />
-34-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:24:13-37
+34-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:24:13-37
 35        <activity
-35-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:25:9-28:48
+35-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:25:9-28:48
 36            android:name="com.example.aaahome2.MainActivity"
-36-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:26:13-41
+36-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:26:13-41
 37            android:exported="true"
-37-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:27:13-36
+37-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:27:13-36
 38            android:label="@string/app_name" />
-38-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:28:13-45
+38-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:28:13-45
 39        <activity
-39-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:29:9-37:20
+39-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:29:9-37:20
 40            android:name="com.example.aaahome2.ui.login.LoginActivity"
-40-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:30:13-51
+40-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:30:13-51
 41            android:exported="true" >
-41-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:31:13-36
+41-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:31:13-36
 42            <intent-filter>
-42-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:32:13-36:29
+42-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:32:13-36:29
 43                <action android:name="android.intent.action.MAIN" />
-43-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:33:17-69
-43-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:33:25-66
+43-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:33:17-69
+43-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:33:25-66
 44
 45                <category android:name="android.intent.category.LAUNCHER" />
-45-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:35:17-77
-45-->C:\Users\msf\AndroidStudioProjects\AAAhome2\app\src\main\AndroidManifest.xml:35:27-74
+45-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:35:17-77
+45-->C:\Users\msf\Desktop\MyProject\AAAhome\AndroidProject\app\src\main\AndroidManifest.xml:35:27-74
 46            </intent-filter>
 47        </activity>
 48

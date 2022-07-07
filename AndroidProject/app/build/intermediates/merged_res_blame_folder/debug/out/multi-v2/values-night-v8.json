@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\msf\\Desktop\\MyProject\\AAAhome\\AndroidProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\msf\\Desktop\\MyProject\\AAAhome\\AndroidProject\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "831"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "815"
+                    }
+                },
                 {
                     "source": "C:\\Users\\msf\\.gradle\\caches\\transforms-3\\2aef3dfe5aa33d1ee4c9c88ae29a3d3a\\transformed\\appcompat-1.2.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
@@ -35,25 +54,6 @@
                         "startOffsets": "1452,1540,1664,1766,1868,1984,2086,2200,2328,2444,2566,2702,2822,2956,3076,3188,3403,3541,3665,3795,3917,4055,4171",
                         "endColumns": "87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,137,123,129,121,137,115,119",
                         "endOffsets": "1535,1659,1761,1863,1979,2081,2195,2323,2439,2561,2697,2817,2951,3071,3183,3309,3536,3660,3790,3912,4050,4166,4286"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\msf\\AndroidStudioProjects\\AAAhome2\\app\\src\\main\\res\\values-night\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "817"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "815"
                     }
                 }
             ]

@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.zhpanvip:bannerviewpager:3.5.5@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/473daca1e5043d993a46937a822466d1/transformed/jetified-bannerviewpager-3.5.5/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/473daca1e5043d993a46937a822466d1/transformed/jetified-bannerviewpager-3.5.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/473daca1e5043d993a46937a822466d1/transformed/jetified-bannerviewpager-3.5.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/473daca1e5043d993a46937a822466d1/transformed/jetified-bannerviewpager-3.5.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zhpanvip/bannerviewpager/3.5.5/36229e57eb3c6b9aefca0114fe8deddd7fd4af7/bannerviewpager-3.5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
